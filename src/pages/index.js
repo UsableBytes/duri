@@ -1,16 +1,23 @@
 import React from 'react';
-import { Link } from 'gatsby';
-
+import { VideoSection } from '../pageComponent/homePage/videoSection';
+import { TourSection } from '../pageComponent/homePage/tourSection';
+import  { ContentSection } from '../pageComponent/homePage/contentSection';
+import { GuideSection } from '../pageComponent/homePage/guideSection';
+import { MainSectionContainer } from '../utils/index.style';
 import Layout from '../components/Layout';
 import SEO from '../components/seo';
 
 export default function IndexPage() {
-  return (
-    <Layout>
-      <SEO title='Home' />
-      <h1>Hi people</h1>
-      <p>Welcome to the homepage of Duri holidays</p>
-      <Link to='/page-2/'>Go to page 2</Link>
-    </Layout>
-  );
+
+	return (
+		<Layout>
+			<SEO title='Home' />
+				<VideoSection/>
+				<MainSectionContainer>
+					<TourSection/>
+					<ContentSection/>
+					<GuideSection/>
+				</MainSectionContainer>
+		</Layout>
+	);
 }
