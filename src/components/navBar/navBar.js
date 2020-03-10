@@ -26,7 +26,7 @@ const Navlinks =  [
             link: 'Link22'
         }]
     },{
-        text: 'Sample',
+        text: 'Blog',
         link: '/page-2/',
         sublink: [{
             text: 'Menu31',
@@ -36,7 +36,7 @@ const Navlinks =  [
             link: 'Link32'
         }]
     },{
-        text: 'About Us',
+        text: 'Carrier',
         link: '/page-2/'
     }
 ]

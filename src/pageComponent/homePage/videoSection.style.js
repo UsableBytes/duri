@@ -6,7 +6,30 @@ export const FeaureList = styled.div `
     left: 0;
     right: 0;
     display: flex;
+`;
+
+export const FeaureListHolder = styled.div `
     overflow-x: scroll;
+    overflow-y: hidden;
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+    &::-webkit-scrollbar {
+        position: absolute;
+        top: -1rem;
+        height:0.2rem;
+        background-color: hsla(0,0%,0%,0.8);
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: #e2e2e2;
+        opacity: 0.5;
+    }
+`;
+
+export const Featureholder = styled.div `
+    display: table;
+    table-layout: fixed;
+    width: 100%;
 `;
 
 export const IntialText = styled.div `

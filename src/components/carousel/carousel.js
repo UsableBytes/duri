@@ -4,7 +4,7 @@ import { CarouselImage } from './carouselImage';
 import { CarouselArrow } from './carouselArrow';
 import { Container, SliderContainer } from './carousel.style';
 
-export const Carousal= () => {
+export const Carousel= () => {
     const data = useStaticQuery(graphql `
     query Carousal{
         image0: file(relativePath: {eq: "gallary/parth.jpg"}) {

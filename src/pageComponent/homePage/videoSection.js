@@ -2,7 +2,7 @@ import React from 'react';
 import { HeroVideo, OverlayTextContainer } from '../../components/heroVideo/heroVideo';
 import { Feature } from '../../components/featureList/feature';
 import { NavBar } from '../../components/navBar/navBar';
-import { FeaureList, IntialText, MainText, SubText, Button } from './videoSection.style';
+import { FeaureList, FeaureListHolder, Featureholder, IntialText, MainText, SubText, Button } from './videoSection.style';
 
 export const VideoSection = (props) =>{
     return (
@@ -16,7 +16,11 @@ export const VideoSection = (props) =>{
                 </OverlayTextContainer>
                 <NavBar/>
                 <FeaureList>
-                    <Feature/><Feature/><Feature/><Feature/><Feature/><Feature/><Feature/><Feature/>
+                    <FeaureListHolder>
+                        <Featureholder>
+                            <Feature/><Feature/><Feature/><Feature/><Feature/><Feature/><Feature/><Feature/>
+                        </Featureholder>
+                    </FeaureListHolder>
                 </FeaureList>
             </HeroVideo>
         </>
