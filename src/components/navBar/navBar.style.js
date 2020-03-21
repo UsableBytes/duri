@@ -1,14 +1,8 @@
 import styled from '@emotion/styled';
 
-export const NavContainer = styled.div `
-    position: absolute;
-    max-height: 8rem;
-    height: calc(1rem + 5vmin);
-    left:0;
-    right: 0;
-    max-width: 1440px;
 
-    &::before {
+export const Wrapper = styled.div `
+ &::before {
         content: '';
         position: absolute;
         left: 0;
@@ -25,16 +19,43 @@ export const NavContainer = styled.div `
             margin: 0 auto;
         }
     }
+`;
+
+export const NavContainer = styled.div `
+    position: absolute;
+    max-height: 8rem;
+    height: calc(1rem + 5vmin);
+    left:0;
+    right: 0;
+    max-width: 1440px;
+    margin: 0 auto;
+
     @media screen and (min-width: 768px) {
         height: 4rem;
     }
 `;
 
-export const OrganisationName = styled.span `
-    font-size: 2rem;
-    cursor: pointer;
+export const LogoContainer = styled.div `
     z-index: 999;
-    position:relative;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    width: 150px;
+    height: 4rem;
+    cursor: pointer;
+        > img {
+            margin-bottom: 0;
+        }
+    @media screen and (min-width: 768px) {
+        height: 8rem;
+        display: inline-block;
+        margin: initial;
+        width: 200px;
+        > img {
+            margin-top: 20%;
+        }
+    }
 `;
 
 export const HamburgerIcon = styled.span `
@@ -88,6 +109,8 @@ export const NavLinksContainer = styled.ul `
     margin-left: 0;
     cursor: pointer;
     height: 8rem;
+    position: relative;
+    top: -4rem;
 
     @media screen and (min-width: 768px) {
        display: inline-flex;
@@ -98,9 +121,10 @@ export const NavLinksContainer = styled.ul `
        align-items: center;
        transform: none;
        background: none;
+       top: 0;
+       z-index: 999;
     }
 `;
-
 
 export const NavLink = styled.li `
     margin-left: 1rem;

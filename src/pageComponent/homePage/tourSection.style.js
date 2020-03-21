@@ -31,7 +31,7 @@ export const CardInfo = styled.p `
     font-size: 0.9rem;
 `;
 
-export const CardLocation = styled.span `
+export const TourType = styled.span `
     font-size: 0.9rem;
     color: #7B8794;
     margin-right: 1rem;

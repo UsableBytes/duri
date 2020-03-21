@@ -34,7 +34,8 @@ export const Featureholder = styled.div `
 
 export const IntialText = styled.div `
     color: rgb(196, 198, 255);
-    font-size: calc(0.2rem + 3vmin);
+    font-size: calc(0.2rem + 2vmin);
+
 `;
 
 export const MainText = styled.div `

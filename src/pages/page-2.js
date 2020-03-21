@@ -4,8 +4,9 @@ import { Link } from "gatsby";
 import Layout from "../components/Layout";
 import SEO from "../components/seo";
 
-import { Carousel } from '../components/carousel/carousel';
+// import { Carousel } from '../components/carousel/carousel';
 import { NavigationTab } from '../components/navigationTab/navigationTab';
+// import { Accordian, AccordianTab } from '../components/accordian/accordian';
 
 const SecondPage = () => (
   <Layout>
@@ -26,7 +27,6 @@ const SecondPage = () => (
 						Gallary Tab Content
 					</div>
 				</NavigationTab>
-			<Carousel/>
       <Link to="/">Go back to the homepage</Link>
   </Layout>
 )

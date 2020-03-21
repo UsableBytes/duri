@@ -2,9 +2,10 @@ import React from  'react';
 import { Container, ContentHeader, ContentSubHeader, CardImgContainer, CardTitle } from './contentSection.style';
 import { Card, CardContent, CardMedia } from '../../components/card/card';
 import { Grid } from '../../components/grid/grid';
-import Plane from '../../icons/travel/transport/plane.svg';
-import Dinner from '../../icons/travel/restaurant/dinner.svg';
 
+import Premium from '../../icons/travel/miscellaneous/premium.svg';
+import Snowman from '../../icons/travel/miscellaneous/snowman.svg';
+import FamilyOnPlane from '../../icons/travel/miscellaneous/familyOnPlane.svg';
 
 export const ContentSection = () => {
     return (
@@ -15,34 +16,34 @@ export const ContentSection = () => {
                 <Card noShadow = {true}>
                     <CardMedia>
                         <CardImgContainer>
-                            <Plane width = '230px' height = '150px' fill = "#5d55fa"></Plane>
+                            <Snowman width = '230px' height = '150px' fill = "#5d55fa" />
                         </CardImgContainer>
                     </CardMedia>
                     <CardContent>
                         <CardTitle>Winter Specials</CardTitle>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis nulla ipsa assumenda cumque obcaecati ut. Tenetur natus accusantium similique laboriosam!
+                            The true splendor of the country shines in the season of pleasant climate. The geographical diversity encompasses mighty peaks to azure shores, scenic deserts to lush greens.
                     </CardContent>
                 </Card>
                 <Card noShadow = {true}>
                     <CardMedia>
                         <CardImgContainer>
-                            <Dinner width = '230px' height = '150px' fill = "#5d55fa"></Dinner>
+                            <Premium width = '230px' height = '150px' fill = "#5d55fa" />
                         </CardImgContainer>
                     </CardMedia>
                     <CardContent>
                         <CardTitle>Premium Services</CardTitle>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis nulla ipsa assumenda cumque obcaecati ut. Tenetur natus accusantium similique laboriosam!
+                            The Duri holidays offers the most premium service. Customised packages, great travelling experiences, and informative guides are the staples of our services.
                     </CardContent>
                 </Card>
                 <Card noShadow = {true}>
                     <CardMedia>
                         <CardImgContainer>
-                            <Dinner width = '230px' height = '150px' fill = "#5d55fa"></Dinner>
+                            <FamilyOnPlane width = '230px' height = '150px' fill = "#5d55fa" />
                         </CardImgContainer>
                     </CardMedia>
                     <CardContent>
                         <CardTitle>Duri Specials</CardTitle>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis nulla ipsa assumenda cumque obcaecati ut. Tenetur natus accusantium similique laboriosam!
+                            The Duri holidays offers all kinds oof special tourism, like piligrames, Educational, womens special, corporate, childrens special, adventurous, cultural tourisam.
                     </CardContent>
                 </Card>
             </Grid>

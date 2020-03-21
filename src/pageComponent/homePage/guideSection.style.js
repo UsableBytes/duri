@@ -1,7 +1,9 @@
 import styled from '@emotion/styled';
 
 
-export const GuideContainer = styled.div ``;
+export const GuideContainer = styled.div `
+    margin-bottom: 3rem;
+`;
 
 export const GuideCard = styled.div `
     position: relative;
@@ -69,4 +71,5 @@ export const ContentSubHeader = styled.p `
     font-size: calc(0.1rem + 2vmin);
     text-align: center;
     font-weight: normal;
+    height: 1.5rem;
 `;

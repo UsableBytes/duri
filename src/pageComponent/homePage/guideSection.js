@@ -29,19 +29,19 @@ export const GuideSection = () => {
                 <GuideCard>
                     <Img fixed = {data.image.childImageSharp.fixed} />
                     <GuideContent>
-                        <ContentSubHeader>Mat Frazer</ContentSubHeader>
+                        <ContentSubHeader>Vishwsh Pawar</ContentSubHeader>
                     </GuideContent>
                 </GuideCard>
                 <GuideCard>
                     <Img fixed = {data.image.childImageSharp.fixed} />
                     <GuideContent>
-                        <ContentSubHeader>Eddie hall</ContentSubHeader>
+                        <ContentSubHeader>Nilesh Sagar</ContentSubHeader>
                     </GuideContent>
                 </GuideCard>
                 <GuideCard>
                     <Img fixed = {data.image.childImageSharp.fixed} />
                     <GuideContent>
-                        <ContentSubHeader>Brian shaw</ContentSubHeader>
+                        <ContentSubHeader>Nilesh Patil</ContentSubHeader>
                     </GuideContent>
                 </GuideCard>
             </Grid>

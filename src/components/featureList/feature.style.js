@@ -5,10 +5,19 @@ import { keyframes } from '@emotion/core';
 
 export const Container = styled.div `
     ${tw `inline-block relative`}
-    border: 1px solid black;
     background: #1f2933;
     display: table-cell;
     width: 200px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: -1px;
+        top: 1rem;
+        bottom: 1rem;
+        background: #000;
+        width: 1px;
+    }
 `;
 
 const bounce = keyframes `
@@ -33,7 +42,7 @@ const bounceBack = keyframes `
 
 export const IconContainer = styled.div `
     text-align: center;
-    padding: 0.5rem;
+    padding: 1.5rem;
     cursor: pointer;
         ${Icon} {
              svg {
