@@ -9,7 +9,7 @@ footer {
 }
 
 .footer {
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
     color: #7b8794;
     height: 4rem;
