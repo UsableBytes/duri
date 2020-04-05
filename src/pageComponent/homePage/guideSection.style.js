@@ -29,7 +29,7 @@ export const GuideCard = styled.div `
     &:hover {
         cursor: pointer;
 
-        * ${GuideContent} {
+        > div {
             left: 0;
             right: 0;
             margin-left: 0;

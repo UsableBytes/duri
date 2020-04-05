@@ -15,7 +15,7 @@ const Navlinks =  [
         link: '/page-2/'
     },{
         text: 'Tours',
-        link: '/page-2/'
+        link: '/tours/'
     }
 ]
 
