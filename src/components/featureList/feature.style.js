@@ -44,28 +44,27 @@ export const IconContainer = styled.div `
     text-align: center;
     padding: 1.5rem;
     cursor: pointer;
-        ${Icon} {
+        span {
              svg {
                 animation: ${bounceBack} 0.3s ease forwards;
              }
         }
-        ${IconName} {
-            span {
-                color: #7b8794;
-            }
+
+        span + span {
+            color: #7b8794;
         }
+
 
     &:hover {
         cursor: pointer;
-        ${Icon} {
+        > span {
              svg {
                 animation: ${bounce} 0.3s ease forwards;
              }
         }
-        ${IconName} {
-            span {
-                color: #5d55fa;
-            }
+
+        span + span {
+            color: #5d55fa;
         }
     }
 `;

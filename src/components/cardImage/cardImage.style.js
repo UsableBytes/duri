@@ -6,7 +6,7 @@ export const Container = styled.div `
  ${tw `relative rounded overflow-hidden`}
 
     &:hover {
-        > ${InnerContainer} {
+        > div {
             &::before {
                 display: block;
             }
