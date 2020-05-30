@@ -43,7 +43,7 @@ export const ContentSection = () => {
                     </CardMedia>
                     <CardContent>
                         <CardTitle>Duri Specials</CardTitle>
-                            The Duri holidays offers all kinds oof special tourism, like piligrames, Educational, womens special, corporate, childrens special, adventurous, cultural tourisam.
+                            The Duri holidays offers all kinds of special tourism, like piligrames, Educational, womens special, corporate, childrens special, adventurous, cultural tourisam.
                     </CardContent>
                 </Card>
             </Grid>

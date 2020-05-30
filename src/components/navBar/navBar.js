@@ -6,16 +6,16 @@ import logo from '../../images/Logo.png';
 const Navlinks =  [
     {
         text: 'Contact Us',
-        link: '/page-2/'
+        link: '/contact/'
     },{
         text: 'Plan Your Holiday',
-        link: '/page-2/'
+        link: '/holiday/'
     },{
         text: 'Trevel Blog',
-        link: '/page-2/'
+        link: '/blog/'
     },{
         text: 'Tours',
-        link: '/page-2/'
+        link: '/tours/'
     }
 ]
 
