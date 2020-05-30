@@ -4,7 +4,7 @@ import { TourSection } from '../pageComponent/homePage/tourSection';
 import  { ContentSection } from '../pageComponent/homePage/contentSection';
 import { GuideSection } from '../pageComponent/homePage/guideSection';
 import { MainSectionContainer } from '../utils/index.style';
-import Layout from '../components/Layout';
+import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 export default function IndexPage() {
