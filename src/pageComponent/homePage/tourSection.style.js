@@ -46,6 +46,7 @@ export const CardExplore = styled.button `
     background-size: 200% 100%;
     background-position: right bottom;
     transition: all 0.5s ease-in-out;
+    font-size: 1rem;
     &:hover {
         background-position: left bottom;
         cursor: pointer;

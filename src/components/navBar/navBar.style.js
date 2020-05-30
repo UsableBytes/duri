@@ -129,6 +129,8 @@ export const NavLinksContainer = styled.ul `
 export const NavLink = styled.li `
     margin-left: 1rem;
     > a {
+
+        font-size: 1rem;
         text-decoration: none;
         color: #ffffff;
         text-shadow: none;

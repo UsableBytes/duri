@@ -83,4 +83,5 @@ export const Icon = styled.span `
 export const IconName = styled.span `
     color: #7b8794;
     display: block;
+    font-size: 1rem;
 `;
