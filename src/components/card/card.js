@@ -1,4 +1,5 @@
 import React from 'react';
+import { useSpring } from 'react-spring';
 import {
 	CardNameContainer,
 	CardContainer,
@@ -7,6 +8,7 @@ import {
 	ActionContainer,
 	FooterContainer
 } from './card.style';
+
 
 
 export const CardName = (props) => {
@@ -56,8 +58,16 @@ export const CardFooter = (props) => {
 };
 
 export const Card = (props) => {
+    const calc = (x, y) => [-(y - window.innerHeight / 2) / 50, (x - window.innerWidth / 2) / 50, 1.05]
+    const trans = (x, y, s) => `perspective(900px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
+    const [prop, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 5, tension: 350, friction: 40 } }))
+
     return (
-		<CardContainer {...props}>
+		<CardContainer {...props}
+            onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
+            onMouseLeave={() => set({ xys: [0, 0, 1] })}
+            style={{ transform: prop.xys.interpolate(trans) }}
+        >
 			{props.children}
 		</CardContainer>
     )
